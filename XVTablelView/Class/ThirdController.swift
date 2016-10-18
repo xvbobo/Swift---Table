@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ThirdController.swift
 //  XVTablelView
 //
 //  Created by 许菠菠 on 2016/10/17.
@@ -8,18 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
-    let SCREEN_W =  UIScreen.main.bounds.width
-    let SCREEN_H =  UIScreen.main.bounds.height
+class ThirdController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
-        let nagationView = CustomNagationView.init(frame: CGRect.init(x: 0, y:0, width: SCREEN_W, height:60))
-        nagationView.centerLable.text = "个人中心"
-        
-        self.view.addSubview(nagationView)
+        self.view.backgroundColor = UIColor.gray
 
         // Do any additional setup after loading the view.
     }

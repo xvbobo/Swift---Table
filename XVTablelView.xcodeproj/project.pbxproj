@@ -14,6 +14,12 @@
 		9AAF27711DB4B47B0082DBDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAF276F1DB4B47B0082DBDD /* LaunchScreen.storyboard */; };
 		9AAF27791DB4B4C50082DBDD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF27781DB4B4C50082DBDD /* FirstViewController.swift */; };
 		9AAF277B1DB4B59A0082DBDD /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF277A1DB4B59A0082DBDD /* RGB.swift */; };
+		9AAF277F1DB4B9CA0082DBDD /* CustomTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF277E1DB4B9CA0082DBDD /* CustomTB.swift */; };
+		9AAF27811DB4BA010082DBDD /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF27801DB4BA010082DBDD /* SecondController.swift */; };
+		9AAF27851DB4CC9C0082DBDD /* ThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF27841DB4CC9C0082DBDD /* ThirdController.swift */; };
+		9AAF27871DB4CCA70082DBDD /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF27861DB4CCA70082DBDD /* FourController.swift */; };
+		9AAF27891DB4CCB50082DBDD /* FiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF27881DB4CCB50082DBDD /* FiveController.swift */; };
+		9AAF278B1DB4D3150082DBDD /* CustomNagationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF278A1DB4D3150082DBDD /* CustomNagationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +30,14 @@
 		9AAF276D1DB4B47B0082DBDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AAF27701DB4B47B0082DBDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AAF27721DB4B47B0082DBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AAF27781DB4B4C50082DBDD /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9AAF277A1DB4B59A0082DBDD /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		9AAF27781DB4B4C50082DBDD /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../FirstViewController.swift; sourceTree = "<group>"; };
+		9AAF277A1DB4B59A0082DBDD /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGB.swift; path = ../RGB.swift; sourceTree = "<group>"; };
+		9AAF277E1DB4B9CA0082DBDD /* CustomTB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTB.swift; sourceTree = "<group>"; };
+		9AAF27801DB4BA010082DBDD /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		9AAF27841DB4CC9C0082DBDD /* ThirdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdController.swift; sourceTree = "<group>"; };
+		9AAF27861DB4CCA70082DBDD /* FourController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
+		9AAF27881DB4CCB50082DBDD /* FiveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveController.swift; sourceTree = "<group>"; };
+		9AAF278A1DB4D3150082DBDD /* CustomNagationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNagationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +72,36 @@
 			children = (
 				9AAF27661DB4B47B0082DBDD /* AppDelegate.swift */,
 				9AAF27681DB4B47B0082DBDD /* ViewController.swift */,
-				9AAF27781DB4B4C50082DBDD /* FirstViewController.swift */,
-				9AAF277A1DB4B59A0082DBDD /* RGB.swift */,
+				9AAF277E1DB4B9CA0082DBDD /* CustomTB.swift */,
+				9AAF278A1DB4D3150082DBDD /* CustomNagationView.swift */,
+				9AAF277C1DB4B8FD0082DBDD /* Class */,
+				9AAF277D1DB4B9290082DBDD /* Tools */,
 				9AAF276A1DB4B47B0082DBDD /* Main.storyboard */,
 				9AAF276D1DB4B47B0082DBDD /* Assets.xcassets */,
 				9AAF276F1DB4B47B0082DBDD /* LaunchScreen.storyboard */,
 				9AAF27721DB4B47B0082DBDD /* Info.plist */,
 			);
 			path = XVTablelView;
+			sourceTree = "<group>";
+		};
+		9AAF277C1DB4B8FD0082DBDD /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9AAF27781DB4B4C50082DBDD /* FirstViewController.swift */,
+				9AAF27801DB4BA010082DBDD /* SecondController.swift */,
+				9AAF27841DB4CC9C0082DBDD /* ThirdController.swift */,
+				9AAF27861DB4CCA70082DBDD /* FourController.swift */,
+				9AAF27881DB4CCB50082DBDD /* FiveController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		9AAF277D1DB4B9290082DBDD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9AAF277A1DB4B59A0082DBDD /* RGB.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAF27891DB4CCB50082DBDD /* FiveController.swift in Sources */,
 				9AAF27791DB4B4C50082DBDD /* FirstViewController.swift in Sources */,
+				9AAF27851DB4CC9C0082DBDD /* ThirdController.swift in Sources */,
 				9AAF27691DB4B47B0082DBDD /* ViewController.swift in Sources */,
 				9AAF27671DB4B47B0082DBDD /* AppDelegate.swift in Sources */,
+				9AAF27811DB4BA010082DBDD /* SecondController.swift in Sources */,
+				9AAF277F1DB4B9CA0082DBDD /* CustomTB.swift in Sources */,
 				9AAF277B1DB4B59A0082DBDD /* RGB.swift in Sources */,
+				9AAF278B1DB4D3150082DBDD /* CustomNagationView.swift in Sources */,
+				9AAF27871DB4CCA70082DBDD /* FourController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
