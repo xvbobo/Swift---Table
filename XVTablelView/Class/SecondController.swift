@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SecondController: UIViewController {
+class SecondController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellow
+//        nagationView.centerLable.text = "圈子中心"
 
         // Do any additional setup after loading the view.
     }

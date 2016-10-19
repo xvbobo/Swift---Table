@@ -8,11 +8,12 @@
 
 import UIKit
 
-class FourController: UIViewController {
+class FourController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.green
+//        nagationView.centerLable.text = "协会"
 
         // Do any additional setup after loading the view.
     }

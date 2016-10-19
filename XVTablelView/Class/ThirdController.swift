@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ThirdController: UIViewController {
+class ThirdController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.gray
+//        nagationView.centerLable.text = "赛事"
 
         // Do any additional setup after loading the view.
     }

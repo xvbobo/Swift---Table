@@ -1,22 +1,21 @@
 //
-//  FirstViewController.swift
+//  EditViewController.swift
 //  XVTablelView
 //
-//  Created by 许菠菠 on 2016/10/17.
+//  Created by 许菠菠 on 2016/10/19.
 //  Copyright © 2016年 许菠菠. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: BaseViewController {
+class EditViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
-        segmentControl.createMySegMentController(titlesArray: ["1","2","3"],controller:self)
-       
+        self.view.backgroundColor = UIColor.yellow
+        // Do any additional setup after loading the view.
     }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

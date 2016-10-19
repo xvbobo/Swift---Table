@@ -12,9 +12,11 @@ class CustomTB: UIView {
     var btnArray = [UIButton]()
     var VCS  = [UIViewController]()
     var FatherVIew = UIView()
+    var labelArray = [UILabel]()
+    
     override init(frame:CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.black
+        self.backgroundColor = UIColor.white
     }
     
     func addControllers(controllers:[UIViewController],imageArray:[String], titlesArray:[String],fatherView:UIView) {
@@ -26,9 +28,11 @@ class CustomTB: UIView {
             self.addSubview(view0)
             let label = UILabel.init(frame: CGRect.init(x: 0, y: view0.frame.height - 12, width: view0.frame.width, height: 10))
             label.text = titlesArray[i]
+            label.tag = 200 + i;
             label.font = UIFont.boldSystemFont(ofSize:10)
-            label.textColor = UIColor.white
+            label.textColor = UIColor.lightGray
             label.textAlignment = .center
+            labelArray.append(label)
             view0.addSubview(label)
             
             let btn = UIButton.init(type: .custom)
@@ -51,8 +55,15 @@ class CustomTB: UIView {
         }
         button.isSelected = !button.isSelected
 
+        for lable:UILabel in labelArray {
+            lable.textColor = UIColor.lightGray
+        }
+        
         if button.isSelected == true {
             print(button.tag)
+            let label = labelArray[button.tag - 100]
+            label.textColor = UIColor.blue
+            
             FatherVIew.insertSubview(VCS[button.tag - 100].view, belowSubview: self)
         }
 

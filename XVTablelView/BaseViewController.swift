@@ -1,21 +1,24 @@
 //
-//  FirstViewController.swift
+//  BaseViewController.swift
 //  XVTablelView
 //
-//  Created by 许菠菠 on 2016/10/17.
+//  Created by 许菠菠 on 2016/10/18.
 //  Copyright © 2016年 许菠菠. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: BaseViewController {
+class BaseViewController: UIViewController{
+
+    var segmentControl = CustomSegmentControl()
+    let SCREEN_W =  UIScreen.main.bounds.width
+    let SCREEN_H =  UIScreen.main.bounds.height
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
-        segmentControl.createMySegMentController(titlesArray: ["1","2","3"],controller:self)
-       
+        segmentControl = CustomSegmentControl.init(frame: CGRect.init(x: 0, y:0, width: SCREEN_W, height:64))
+        self.view.addSubview(segmentControl)
+
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
