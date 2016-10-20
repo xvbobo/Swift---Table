@@ -1,27 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yq3-G9-Owb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--MyNAV View Controller-->
+        <scene sceneID="o29-UU-tkj">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="Yq3-G9-Owb" customClass="MyNAVViewController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fMy-UD-OdB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uTq-Dy-rK0" kind="relationship" relationship="rootViewController" id="eV5-2J-k99"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQ7-4r-lMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="-10"/>
+        </scene>
+        <!--新闻-->
+        <scene sceneID="JgC-uf-AaO">
+            <objects>
+                <viewController id="b0N-Mu-Pfv" customClass="FirstViewController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="0hv-2g-Rai"/>
+                        <viewControllerLayoutGuide type="bottom" id="grF-XC-Pm1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="CFy-iV-F6A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="新闻" image="user_edit_image" selectedImage="新闻-hover" id="tPB-vQ-bwq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cL6-Db-5gG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="50" y="991"/>
+        </scene>
+        <!--赛事-->
+        <scene sceneID="Z3g-H8-S8V">
+            <objects>
+                <viewController id="xeG-Wb-z0o" customClass="SecondController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Weq-T1-E6q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vs1-eD-czt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Itl-h9-c6t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="赛事" image="赛事" selectedImage="赛事-hover" id="G9i-pb-KcQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xk8-d0-hs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="991"/>
+        </scene>
+        <!--个人-->
+        <scene sceneID="Epc-2W-ffp">
+            <objects>
+                <viewController id="rox-ms-BiS" customClass="FiveController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Anu-j2-BVW"/>
+                        <viewControllerLayoutGuide type="bottom" id="EzY-yd-aM2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qg0-Tk-YB5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="个人" image="个人" selectedImage="个人-hover" id="M9W-wb-7a1"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnk-Qu-I0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="-545"/>
+        </scene>
+        <!--协会-->
+        <scene sceneID="DM8-sq-hm8">
+            <objects>
+                <viewController id="39B-yR-dzl" customClass="FourController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6lO-re-fov"/>
+                        <viewControllerLayoutGuide type="bottom" id="a7B-Ok-3gb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gM3-sh-edM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="协会" image="协会" selectedImage="协会-hover" id="sIX-u6-SkM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q6-D4-1kY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937" y="248"/>
+        </scene>
+        <!--圈子-->
+        <scene sceneID="yBI-e7-cLo">
+            <objects>
+                <viewController id="wzk-99-Igk" customClass="ThirdController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xk3-TD-JwO"/>
+                        <viewControllerLayoutGuide type="bottom" id="80N-dw-TKx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q09-GB-vmw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="圈子" image="圈子" selectedImage="圈子-hover" id="94Q-9w-lv3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoC-Z6-XLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="991"/>
+        </scene>
+        <!--MyTB View Controller-->
+        <scene sceneID="YBI-lL-lRr">
+            <objects>
+                <tabBarController id="uTq-Dy-rK0" customClass="MyTBViewController" customModule="XVTablelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="y47-mU-ULs"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LhI-S9-o5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="b0N-Mu-Pfv" kind="relationship" relationship="viewControllers" id="33N-Y5-JWT"/>
+                        <segue destination="xeG-Wb-z0o" kind="relationship" relationship="viewControllers" id="Ysy-Wu-DAU"/>
+                        <segue destination="wzk-99-Igk" kind="relationship" relationship="viewControllers" id="sxy-Sg-REC"/>
+                        <segue destination="39B-yR-dzl" kind="relationship" relationship="viewControllers" id="8o9-Ci-gOP"/>
+                        <segue destination="rox-ms-BiS" kind="relationship" relationship="viewControllers" id="PwG-ai-Kbw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDy-D0-DWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user_edit_image" width="16" height="16"/>
+        <image name="个人" width="16" height="16"/>
+        <image name="个人-hover" width="16" height="16"/>
+        <image name="协会" width="16" height="16"/>
+        <image name="协会-hover" width="16" height="16"/>
+        <image name="圈子" width="16" height="16"/>
+        <image name="圈子-hover" width="16" height="16"/>
+        <image name="新闻-hover" width="16" height="16"/>
+        <image name="赛事" width="16" height="16"/>
+        <image name="赛事-hover" width="16" height="16"/>
+    </resources>
 </document>

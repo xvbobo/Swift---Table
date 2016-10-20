@@ -31,10 +31,7 @@ class RGB: NSObject {
     
 }
 extension UIColor {
-    
-    
-    
-    /**
+       /**
      
      *  16进制 转 RGBA
      
@@ -42,37 +39,17 @@ extension UIColor {
     
     class func rgbaColorFromHex(rgb:Int, alpha: CGFloat) ->UIColor {
         
-        
-        
-        return UIColor(red: ((CGFloat)((rgb & 0xFF0000) >> 16))/255,
-                       
-                       green: ((CGFloat)((rgb & 0xFF00) >> 8))/255,
-                       
-                       blue: ((CGFloat)(rgb & 0xFF))/255,
-                       
-                       alpha: alpha)
-        
+        return UIColor(red: ((CGFloat)((rgb & 0xFF0000) >> 16))/255,green: ((CGFloat)((rgb & 0xFF00) >> 8))/255,blue: ((CGFloat)(rgb & 0xFF))/255,alpha: alpha)
+
     }
-    
-    
-    
-    /**
+     /**
      
      *  16进制 转 RGB
      
      */
     
     class func rgbColorFromHex(rgb:Int) -> UIColor {
-        
-        
-        
-        return UIColor(red: ((CGFloat)((rgb & 0xFF0000) >> 16))/255,
-                       
-                       green: ((CGFloat)((rgb & 0xFF00) >> 8))/255,
-                       
-                       blue: ((CGFloat)(rgb & 0xFF))/255,
-                       
-                       alpha: 1.0)
+    return UIColor(red: ((CGFloat)((rgb & 0xFF0000) >> 16))/255,green: ((CGFloat)((rgb & 0xFF00) >> 8))/255,blue: ((CGFloat)(rgb & 0xFF))/255,alpha: 1.0)
         
     }
     

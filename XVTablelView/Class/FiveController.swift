@@ -8,19 +8,24 @@
 
 import UIKit
 
-class FiveController: BaseViewController ,CustomSegmentDelegate{
-
+class FiveController: BaseViewController,CustomSegmentDelegate{
+    
     let userBackView = UserMessageView()
-
+    
+    let myTb = MyTBViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = RGB.BackGroundColor()
         self.createInterFace()
+        
     }
-
+    
+    
+    
     func createInterFace() {
         segmentControl.backgroundColor = RGB.MainColor()//        nagationView.centerLable.text = "新闻"
         segmentControl.delegate = self
+        segmentControl.isBackImage = true
         segmentControl.createButtons(title: ["user_edit_image","user_seting_image"], controller: self)
         userBackView.frame = CGRect.init(x: 0, y:64, width:self.view.frame.width, height: SCREEN_H/3 - 70)
         userBackView.createUserMessage(userHead: "user_headDefault_image", userName: "阿花花酱", userSex: "user_female_image")
@@ -46,28 +51,28 @@ class FiveController: BaseViewController ,CustomSegmentDelegate{
         cellView2.addGestureRecognizer(tap2)
     }
     func click() {
-       print("我的动态")
+        print("我的动态")
     }
     
     func click1() {
         print("关注的人")
-
+        
     }
     
     func click2() {
         print("我的粉丝")
-
+        
     }
-
+    
     func NavLeftBtnClick() {
-//        self.presentVC(controller: EditViewController())
+        self.navigationController?.pushViewController(EditViewController(), animated: true)
         print("leftButton")
-
+        
     }
     
     func NavRightBtnClick() {
         print("rightbtnClick")
-
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,15 +80,15 @@ class FiveController: BaseViewController ,CustomSegmentDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

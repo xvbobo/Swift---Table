@@ -12,12 +12,17 @@ class FirstViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red
-        segmentControl.createMySegMentController(titlesArray: ["1","2","3"],controller:self)
-       
+        
+//        segmentControl.createMySegMentController(titlesArray: ["1","2","3"],controller:self)
+//        self.navigationController?.navigationBar.tintColor = UIColor.clear
+//        self.navigationController?.navigationBar.barTintColor = UIColor.red
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.red
+//        self.navigationController?.navigationBar.
+        
+
     }
     
-    
-    override func didReceiveMemoryWarning() {
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

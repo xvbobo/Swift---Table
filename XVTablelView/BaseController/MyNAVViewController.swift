@@ -1,26 +1,22 @@
 //
-//  SecondController.swift
+//  MyNAVViewController.swift
 //  XVTablelView
 //
-//  Created by 许菠菠 on 2016/10/17.
+//  Created by 许菠菠 on 2016/10/19.
 //  Copyright © 2016年 许菠菠. All rights reserved.
 //
 
 import UIKit
 
-class SecondController: BaseViewController {
+class MyNAVViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellow
-//        nagationView.centerLable.text = "圈子中心"
-        self.navigationController?.navigationBar.barTintColor = UIColor.yellow
+       
+        self.navigationBar.isHidden = true
         
-
-        // Do any additional setup after loading the view.
     }
 
-   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
