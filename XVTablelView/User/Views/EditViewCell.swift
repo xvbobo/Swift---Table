@@ -22,6 +22,7 @@ class EditViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.createInterFace()
+        self.selectionStyle = .none
         
     }
     func createInterFace() {

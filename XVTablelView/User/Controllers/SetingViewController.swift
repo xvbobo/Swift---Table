@@ -1,25 +1,29 @@
 //
-//  SecondController.swift
+//  SetingViewController.swift
 //  XVTablelView
 //
-//  Created by 许菠菠 on 2016/10/17.
+//  Created by 许菠菠 on 2016/10/25.
 //  Copyright © 2016年 许菠菠. All rights reserved.
 //
 
 import UIKit
 
-class SecondController: BaseViewController {
+class SetingViewController: BaseViewController,CustomSegmentDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellow
-        self.navigationController?.navigationBar.barTintColor = UIColor.yellow
+        segmentControl.delegate = self
+        segmentControl.createBack()
         
-
+        segmentControl.createTitleView(title: "设置")
         // Do any additional setup after loading the view.
     }
+    
+    func NavLeftBtnClick() {
+        self.navigationController?.popViewController(animated: true)
 
-   
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

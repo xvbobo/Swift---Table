@@ -66,12 +66,12 @@ class FiveController: BaseViewController,CustomSegmentDelegate{
     
     func NavLeftBtnClick() {
         self.navigationController?.pushViewController(EditViewController(), animated: true)
-        print("leftButton")
         
     }
     
     func NavRightBtnClick() {
-        print("rightbtnClick")
+        self.navigationController?.pushViewController(SetingViewController(), animated: true)
+
         
     }
     

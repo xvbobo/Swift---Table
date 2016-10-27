@@ -12,14 +12,9 @@ class FirstViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red
-        
-//        segmentControl.createMySegMentController(titlesArray: ["1","2","3"],controller:self)
-//        self.navigationController?.navigationBar.tintColor = UIColor.clear
-//        self.navigationController?.navigationBar.barTintColor = UIColor.red
-//        self.navigationController?.navigationBar.backgroundColor = UIColor.red
-//        self.navigationController?.navigationBar.
-        
-
+        HomeApi().homeData { (result) in
+            print(result)
+        }
     }
     
        override func didReceiveMemoryWarning() {
