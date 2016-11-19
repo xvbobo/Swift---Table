@@ -24,6 +24,7 @@
 		9A4293D81DBDEA4700918E4E /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4293D71DBDEA4700918E4E /* DateView.swift */; };
 		9A4293DA1DBE016400918E4E /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4293D91DBE016400918E4E /* DayModel.swift */; };
 		9A4293DC1DBE0B2000918E4E /* CustomPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4293DB1DBE0B2000918E4E /* CustomPickView.swift */; };
+		9A9CDFBF1DD311B200CE2E6A /* MyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CDFBE1DD311B200CE2E6A /* MyObject.swift */; };
 		9AAF27671DB4B47B0082DBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF27661DB4B47B0082DBDD /* AppDelegate.swift */; };
 		9AAF276C1DB4B47B0082DBDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAF276A1DB4B47B0082DBDD /* Main.storyboard */; };
 		9AAF276E1DB4B47B0082DBDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AAF276D1DB4B47B0082DBDD /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		9A4293D71DBDEA4700918E4E /* DateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		9A4293D91DBE016400918E4E /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 		9A4293DB1DBE0B2000918E4E /* CustomPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickView.swift; sourceTree = "<group>"; };
+		9A9CDFBE1DD311B200CE2E6A /* MyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
 		9AAF27631DB4B47B0082DBDD /* XVTablelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XVTablelView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAF27661DB4B47B0082DBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AAF276B1DB4B47B0082DBDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				9A4293D41DBDEA2000918E4E /* 日历 */,
 				9AAF277A1DB4B59A0082DBDD /* RGB.swift */,
+				9A9CDFBE1DD311B200CE2E6A /* MyObject.swift */,
 				9A0F36D31DB62432007734FC /* MyColor.swift */,
 				9A143CD91DB5C41500046C67 /* CustomSegmentControl.swift */,
 			);
@@ -273,6 +276,7 @@
 				9AAF27791DB4B4C50082DBDD /* FirstViewController.swift in Sources */,
 				9A143CE01DB615DD00046C67 /* UserCellView.swift in Sources */,
 				9A4293D61DBDEA3900918E4E /* DateModel.swift in Sources */,
+				9A9CDFBF1DD311B200CE2E6A /* MyObject.swift in Sources */,
 				9A109F531DBF012F00799C94 /* SetingViewController.swift in Sources */,
 				9A143CD81DB5B83300046C67 /* BaseViewController.swift in Sources */,
 				9A0F36D41DB62432007734FC /* MyColor.swift in Sources */,
